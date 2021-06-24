@@ -1,0 +1,1766 @@
+@import url('../fonts/Etelka/stylesheet.css');
+
+$lightgoldcolor: #E3C794;
+$goldcolor:#C19B46;
+$greycolor:#f0f0f0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &::selection {
+        background-color: transparent;
+    }
+
+    a, button { cursor: pointer; }
+
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Etelka Light Pro';
+    font-size: 12px;
+    color: white;
+    background-image: url(../images/bgmain.png);
+}
+
+.container-fluid {
+    width: 100%;
+
+    .home-block {
+        width: 100%;
+        height: 115vh;
+        min-height: 700px;
+        background-color: #291d23;
+        background-image: url(../images/bg1.png);
+        background-size: cover;
+        background-position: 50% 50%;
+        position: relative;
+
+        .home-block-center {
+            max-width: 935px;
+            width: 80%;
+            margin: 0 auto;
+
+            .nav {
+                width: 100%;
+                padding: 24px 0px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid rgba($color: $greycolor, $alpha: 0.7);
+
+                .language-menu {
+                    width: 33.3%;
+                    transition: margin-left 0.03s ease-out;
+                    transition-delay: 0s;
+
+                    &.run-lang-menu {
+                        transition: margin-left 0.3s ease-out;
+                        transition-delay: 0.1s;
+                        margin-left: 0px;
+                    }
+
+                    ul {
+                        list-style: none;
+                        margin-left: -5px;
+
+                        li {
+                            display: inline-block;
+
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                padding: 3.5px;
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+
+                .logo {
+                    width: 33.3%;
+
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        width: 48%;
+                    }
+                }
+
+                .nummail {
+                    width: 33.3%;
+                    text-align: right;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    .icon-tel {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        background-color: $lightgoldcolor;
+                        position: relative;
+                        margin-right: 10px;
+
+                        img {
+                            width: 50%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+
+                    .contact {
+
+                        span {
+                            display: block;
+                            word-spacing: -1px;
+                            padding: 0px 0px;
+                        }
+                    }
+
+
+                }
+
+            }
+
+            .nav-menu {
+                width: 100%;
+                margin: 20px 0px 205px;
+                ul .nav-item .nav-link:hover{
+                    color: #C19B46;
+                }
+
+                .button-nav-menu {
+                    display: none;
+                    width: 40px;
+                    height: 40px;
+                    margin-left: auto;
+
+                    .line {
+                        width: 100%;
+                        height: 4px;
+                        background-color: white;
+                        border-radius: 5px;
+                        margin-left: auto;
+                        margin-bottom: 5px;
+
+                        &.two {
+                            width: 25px;
+                        }
+
+                        &.three {
+                            width: 35px;
+                        }
+                    }
+                }
+
+                &>ul {
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    transition-property: height min-height;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-out;
+
+                    &.run-menu {
+                        min-height: 600px;
+                        height: 100vh;
+                        padding: 4vh 0;
+                    }
+
+                    &>li {
+                        &:nth-of-type(2) {
+                            position: relative;
+                        }
+
+                        &>a {
+                            text-decoration: none;
+                            color: white;
+                            padding: 5px 0px;
+                            text-transform: capitalize;
+                            word-spacing: 3px;
+
+                            &:first-child {
+                                padding-left: 0px !important;
+                            }
+
+                            &:last-child {
+                                padding-right: 0px !important;
+                            }
+
+                            .icon {
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+
+                        }
+
+                        .dropdown-menu {
+                            display: none;
+                            width: 135%;
+                            position: absolute;
+                            left: -5%;
+                            margin-top: 10px;
+                            border-top: 3px solid $lightgoldcolor;
+                            background-color: rgba($color: $greycolor, $alpha: 0.7);
+
+                            &.run-drop-menu {
+                                display: block;
+                            }
+
+                            ul {
+                                width: 100%;
+                                list-style: none;
+                                padding-bottom: 3px;
+
+                                li {
+                                    display: block;
+                                    width: 100%;
+
+                                    a {
+                                        text-decoration: none;
+                                        color: white;
+                                        font-size: 11px;
+                                        display: block;
+                                        padding: 4px 0px 4px 6px;
+
+                                        &:hover {
+                                            background-color: $lightgoldcolor;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .home-content {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                .content-text {
+                    width: 85%;
+                    align-self: stretch;
+
+                    h2.title {
+                        width: 100%;
+                        font-size: calc(20px + 3vw);
+                        color: $lightgoldcolor;
+                        letter-spacing: -0.5px;
+                        font-stretch: extra-expanded;
+                        font-family: 'Etelka Medium Pro';
+
+                    }
+
+                    h2.unrtitle {
+                        width: 100%;
+                        font-size: calc(9px + 2vw);
+                        line-height: 35px;
+                        letter-spacing: 0.5px;
+                        word-spacing: 0.5px;
+                        font-family: 'Etelka Medium Pro';
+                    }
+
+                    p {
+                        padding: 1vw 0px 40px;
+                        font-size: calc(8px + 0.4vw);
+                        letter-spacing: 0.6px;
+                        word-spacing: 0.8px;
+                        line-height: 25px;
+
+                    }
+
+                    button {
+                        padding: 14px 16px 11px 20px;
+                        background-color: $lightgoldcolor;
+                        border: none;
+                        letter-spacing: 0.1px;
+                        word-spacing: 1px;
+                    
+                        &:hover{
+                            transform: scale(1.1, 1.1);
+                            transition: .2s;
+                        }
+
+                        img {
+                            width: 13px;
+                            height: 13px;
+                            vertical-align: middle;
+                            margin-left: 11px;
+                        }
+                    }
+
+                }
+
+                .content-play-video {
+                    align-self: flex-end;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .play-text {
+                        writing-mode: vertical-rl;
+                        transform: rotate(180deg);
+
+                        span {
+                            display: block;
+                            padding: 0px 1px;
+
+                            &:nth-of-type(1) {
+                                text-transform: capitalize;
+                            }
+
+                            &:nth-of-type(2) {
+                                text-transform: uppercase;
+                                font-family: 'Etelka Medium Pro';
+                                font-size: 10px;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+
+                    .play-icon {
+                        width: 55px;
+                        height: 55px;
+                        border-radius: 50%;
+                        background-color: white;
+                        margin-top: 15px;
+                        margin-bottom: -5px;
+                        position: relative;
+                        cursor: pointer;
+
+                        .play-icon-circle {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 60%;
+                            height: 60%;
+                            border-radius: 50%;
+                            background-color: $lightgoldcolor;
+
+                            img {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                width: 40%;
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+
+                    }
+
+
+                }
+            }
+        }
+
+        .social-icons {
+            height: 120px;
+            position: absolute;
+            left: 2%;
+            bottom: 3%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .icons-item {   
+                cursor: pointer;
+                img {
+                    filter: invert(1);
+                    width: 24px;
+                    height: 24px;
+
+                }
+            }
+        }
+
+        .position-block {
+            background-color: #fff;
+            color: black;
+            position: absolute;
+            bottom: -65px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 965px;
+            width: 80%;
+            height: 130px;
+            padding: 20px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .col-3 {
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon {
+                    vertical-align: middle;
+                    margin-right: 5px;
+
+                    img {
+                        width: 80%;
+                    }
+                }
+
+                .text {
+                    vertical-align: middle;
+
+                    h6 {
+                        font-family: 'Etelka Medium Pro';
+                        font-size: 11px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                        padding-top: 2px;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-block {
+        margin: 0 auto;
+        width: 80%;
+        max-width: 935px;
+        background-color: transparent;
+        padding: 130px 0px 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        color: black;
+
+        .about-citizen {
+            width: 40%;
+            padding: 70px 0px 0px;
+
+            h2 {
+                font-size: 38px;
+                color: $goldcolor;
+                font-family: 'Etelka Medium Pro';
+
+                span {
+                    color: black;
+                }
+            }
+
+            h4 {
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            p {
+                padding: 25px 30px 25px 0px;
+                line-height: 22px;
+            }
+
+            button {
+                padding: 14px 16px 11px 20px;
+                background-color: $lightgoldcolor;
+                border: none;
+                letter-spacing: 0.1px;
+                word-spacing: 1px;
+                &:hover{
+                    transform: scale(1.1, 1.1);
+                    transition: .2s;
+                }
+
+                img {
+                    width: 13px;
+                    height: 13px;
+                    vertical-align: middle;
+                    margin-left: 11px;
+                }
+            }
+        }
+
+        .images-citizen {
+            width: 60%;
+            display: flex;
+
+            .citizen-img-group {
+                width: 50%;
+                padding: 30px 0px 0px 20px;
+
+                .citizen-img-one {
+                    margin-bottom: 20px;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .citizen-img-two {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .citizen-img-three {
+                width: 50%;
+                padding-left: 20px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    .services-block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        .col-3 {
+            cursor: pointer;
+            width: 25%;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .info {
+                font-family: 'Etelka Medium Pro';
+                position: absolute;
+                bottom: 4%;
+                left: 0;
+                width: 100%;
+                padding: 0px 4%;
+                display: flex;
+                justify-content: space-between;
+
+                .icon-text {
+                    .icon {
+                        display: inline-block;
+                        vertical-align: middle;
+
+                        img {
+                            width: 2.3vw;
+                            // width: 80%;
+
+                            &.invert {
+                                filter: invert(1);
+                            }
+                        }
+                    }
+
+                    p {
+                        margin-left: 0.8vw;
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 1vw;
+                    }
+                }
+
+                span.number {
+                    font-size: calc(10px + 2vw);
+                    color: rgba($color: $greycolor, $alpha: 0.4);
+                }
+            }
+        }
+    }
+
+    .logo-block {
+        max-width: 935px;
+        width: 80%;
+        background-color: transparent;
+        margin: 0 auto;
+        padding: 90px 0;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+
+
+        .mice-uzb-text {
+            width: 50%;
+
+            h6 {
+                font-family: 'Etelka Medium Pro';
+                font-size: 38px;
+
+                span {
+                    color: $goldcolor;
+                }
+            }
+
+            p {
+                word-spacing: -1px;
+                line-height: 18px;
+                padding: 13px 0px;
+                font-weight: bold;
+            }
+
+            ul {
+                display: inline-block;
+                width: 49%;
+                font-weight: bold;
+                vertical-align: top;
+
+                &.left-list-inMiceuzb {
+                    list-style: none;
+
+                    li {
+                        padding: 5px 0;
+
+                        &::before {
+                            content: '☒';
+                            padding-right: 5px;
+                        }
+
+                        &:nth-of-type(3) {
+                            color: $goldcolor;
+                        }
+                    }
+                }
+
+                &.right-list-inMiceuzb {
+                    list-style: none;
+
+                    li {
+                        padding: 5px 0;
+
+                        &::before {
+                            content: url(../icons/chevron-down-solid.svg.png);
+                            filter: invert(1);
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mice-uzb-img {
+            width: 48%;
+            display: flex;
+
+            img {
+                align-self: center;
+                width: 100%;
+            }
+        }
+    }
+
+    .packages-block {
+        width: 100%;
+        background-color: rgba($color: $greycolor, $alpha: 0.5);
+        color: black;
+
+        .packages-block-center {
+            max-width: 935px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+
+            h4.title {
+                font-size: 38px;
+                padding-bottom: 20px;
+                text-align: center;
+                font-family: 'Etelka Medium Pro';
+
+                span {
+                    color: $goldcolor;
+                }
+            }
+
+            .card-deck {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .card {
+                    width: 32%;
+                    background-color: #fff;
+
+                    .card-img {
+                        width: 100%;
+                        position: relative;
+
+                        &::before {
+                            content: url(../icons/plus.png);
+                            opacity: 0;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+
+
+
+                        img {
+                            width: 100%;
+                        }
+
+                        &:hover::before {
+                            opacity: 1;
+                        }
+                    }
+
+                    .card-body {
+                        width: 100%;
+                        padding: 15px 15px 10px;
+                        border-bottom: 1px solid $greycolor;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                        h6.title {
+                            font-size: 16px;
+                            font-family: 'Etelka Medium Pro';
+                            padding-bottom: 5px;
+                        }
+
+                        small {
+                            width: 100%;
+                            font-size: 10px;
+                            font-weight: bold;
+                            white-space: nowrap;
+                            color: rgba($color: #000000, $alpha: 0.7);
+
+                            img {
+                                width: 10px;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+
+                    .card-footer {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-left: 15px;
+
+                        .info {
+                            width: 65%;
+                            display: flex;
+                            justify-content: space-around;
+                            padding: 13px 0px;
+
+                            span {
+                                width: 33.3%;
+                                font-size: 10px;
+                                font-weight: bold;
+                                color: rgba($color: #000000, $alpha: 0.7);
+                            }
+                        }
+
+                        button {
+                            width: 35%;
+                            font-size: 10px;
+                            font-weight: bold;
+                            border: none;
+                            border-left: 1px solid $greycolor;
+                            background-color: transparent;
+                            &:hover{
+                                background-color: #C19B46;
+                                transition: .2s;
+                            }
+
+                           
+                        }
+                    }
+
+                    // &:hover .card-body h6.title {
+                    //     color: $lightgoldcolor;
+                    // }
+                }
+            }
+
+            &>button {
+                display: block;
+                padding: 14px 16px 11px 20px;
+                background-color: $lightgoldcolor;
+                border: none;
+                letter-spacing: 0.1px;
+                word-spacing: 1px;
+                margin: 40px auto 30px;
+                &:hover{
+                    transform: scale(1.1, 1.1);
+                    transition: .2s;
+                }
+
+                img {
+                    width: 13px;
+                    height: 13px;
+                    vertical-align: middle;
+                    margin-left: 11px;
+                }
+            }
+        }
+    }
+
+    .business-aviation-service-block {
+        width: 100%;
+        background-image: url(../images/bg3.png);
+        background-position: 50% 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: black;
+
+        .business-aviation-service-block-center {
+            width: 80%;
+            max-width: 935px;
+            margin: 0 auto;
+            padding: 60px 0px;
+            position: relative;
+
+            h4 {
+                width: 60%;
+                font-size: 38px;
+                color: $goldcolor;
+                font-family: 'Etelka Medium Pro';
+
+                span {
+                    color: black;
+                }
+            }
+
+            p {
+                width: 47%;
+                line-height: 22px;
+                font-weight: bold;
+                padding-top: 20px;
+
+            }
+
+            &>button {
+                display: block;
+                padding: 14px 16px 11px 20px;
+                background-color: $lightgoldcolor;
+                border: none;
+                letter-spacing: 0.1px;
+                word-spacing: 1px;
+                margin: 30px auto 30px 0px;
+                &:hover{
+                    transform: scale(1.1, 1.1);
+                    transition: .2s;
+                }
+
+                img {
+                    width: 13px;
+                    height: 13px;
+                    vertical-align: middle;
+                    margin-left: 11px;
+                }
+            }
+
+            &>img {
+                width: 80%;
+                position: absolute;
+                top: 60%;
+                right: 0%;
+                transform: translate(35%, -50%);
+            }
+        }
+
+    }
+
+    .latest-news-block {
+        background-color: transparent;
+        color: black;
+        max-width: 935px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 40px 0;
+
+        h4.title {
+            font-size: 38px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-family: 'Etelka Medium Pro';
+
+            span {
+                color: $goldcolor;
+            }
+        }
+
+        .card-deck {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .card {
+                width: 32%;
+                background-color: #fff;
+
+                .card-img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .card-body {
+                    width: 100%;
+                    padding: 15px 15px 10px;
+                    border-bottom: 1px solid $greycolor;
+
+                    h6.title {
+                        font-size: 16px;
+                        font-family: 'Etelka Medium Pro';
+                        padding-bottom: 5px;
+                    }
+
+                    small {
+                        width: 100%;
+                        font-size: 10px;
+                        font-weight: bold;
+                        color: rgba($color: #000000, $alpha: 0.7);
+                    }
+                }
+
+                .card-footer {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .info {
+                        width: 65%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 13px 15px;
+
+                        span {
+                            font-size: 10px;
+                            font-weight: bold;
+                            color: rgba($color: #000000, $alpha: 0.7);
+
+                            &:nth-of-type(2) {
+                                color: $lightgoldcolor;
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 35%;
+                        font-size: 10px;
+                        font-weight: bold;
+                        border: none;
+                        border-left: 1px solid $greycolor;
+                        background-color: transparent;
+
+                        &:hover {
+                            background-color: $lightgoldcolor;
+                        }
+                    }
+                }
+
+              
+            }
+        }
+
+        &>button {
+            display: block;
+            padding: 14px 16px 11px 20px;
+            background-color: $lightgoldcolor;
+            border: none;
+            letter-spacing: 0.1px;
+            word-spacing: 1px;
+            margin: 40px auto 30px;
+            &:hover{
+                transform: scale(1.1, 1.1);
+                transition: .2s;
+            }
+
+            img {
+                width: 13px;
+                height: 13px;
+                vertical-align: middle;
+                margin-left: 11px;
+            }
+        }
+    }
+
+    .our-partners-block {
+        width: 100%;
+        background-color: #fff;
+        color: black;
+
+        .our-partners-block-center {
+            width: 80%;
+            max-width: 935px;
+            background-color: transparent;
+            margin: 0 auto;
+            padding: 50px 0px;
+
+            h4.title {
+                text-align: center;
+                font-size: 38px;
+                font-family: 'Etelka Medium Pro';
+
+                span {
+                    color: $goldcolor;
+                }
+            }
+
+            .Logos {
+                width: 100%;
+                padding-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .logo {
+                    width: 16.5%;
+                    height: 5vw;
+                    position: relative;
+                    text-align: center;
+
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 80%;
+                        filter: grayscale(200%);
+                        transition: filter 0.2s ease-out;
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 0px 8px -4px rgba($color: #000000, $alpha: 0.5);
+                        img {
+                            filter: grayscale(0%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .our-clients-block {
+        color: black;
+        width: 80%;
+        max-width: 935px;
+        background-color: transparent;
+        margin: 0 auto;
+        padding: 60px 0px 70px;
+
+
+        h4.title {
+            text-align: center;
+            font-size: 38px;
+            font-family: 'Etelka Medium Pro';
+
+            span {
+                color: $goldcolor;
+            }
+        }
+
+        .clients {
+            width: 100%;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .client {
+                width: 16.5%;
+                text-align: center;
+                position: relative;
+                height: 6vw;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 80%;
+                    animation-name: filter;
+                    animation-duration: 1.5s;
+                    animation-timing-function: ease-out;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+
+                }
+            }
+        }
+    }
+
+    .footer-block {
+        width: 100%;
+        background-color: #38182a;
+        box-shadow: inset 0px -750px 550px -550px rgba($color: #000000, $alpha: 0.5);
+
+        .footer-block-center {
+            width: 80%;
+            max-width: 935px;
+            margin: 0 auto;
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+
+            .about-citizen {
+                width: 30%;
+
+                .citizen-logo {
+                    width: 60%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    padding-top: 15px;
+                    font-size: 10px;
+                    line-height: 18px;
+
+                }
+            }
+
+            .contact-info {
+                width: 15%;
+
+                h4.title {
+                    text-transform: uppercase;
+                    font-family: 'Etelka Medium Pro';
+                    letter-spacing: 0.5px;
+                }
+
+                ul {
+                    padding-top: 20px;
+                    list-style: none;
+
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        font-size: 10px;
+                        padding: 8px 0;
+
+                        img {
+                            margin-right: 6px;
+                            width: 16px;
+                            align-self: flex-start;
+                        }
+
+                        span {
+                            line-height: 15px;
+                        }
+                    }
+                }
+            }
+
+            .useful-links {
+                width: 15%;
+
+                h4.title {
+                    text-transform: uppercase;
+                    font-family: 'Etelka Medium Pro';
+                    letter-spacing: 0.5px;
+                }
+
+                ul {
+                    padding-top: 20px;
+                    list-style: none;
+
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        font-size: 10px;
+                        padding: 8px 0;
+
+                        &::before {
+                            content: url(../icons/chevron-down-solid.svg.png);
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .information {
+                width: 15%;
+
+                h4.title {
+                    text-transform: uppercase;
+                    font-family: 'Etelka Medium Pro';
+                    letter-spacing: 0.5px;
+                }
+
+                ul {
+                    padding-top: 20px;
+                    list-style: none;
+
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        font-size: 10px;
+                        padding: 8px 0;
+
+                        &::before {
+                            content: url(../icons/chevron-down-solid.svg.png);
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+
+            .get-in-touch {
+                width: 20%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .icons {
+                    width: 16.5%;
+                    margin-bottom: 5px;
+
+                    &:nth-last-of-type(1) {
+                        margin-right: auto;
+                    }
+
+                    img {
+                        width: 16px;
+                        filter: invert(1);
+                    }
+
+                }
+            }
+        }
+
+        .copyright {
+            width: 100%;
+            padding: 20px 0px;
+            text-align: center;
+            margin-top: 70px;
+            border-top: 1px solid $greycolor;
+        }
+    }
+
+    .scrolltop {
+        width: 3vw;
+        height: 3vw;
+        min-width: 40px;
+        min-height: 40px;
+        position: fixed;
+        right: calc(-3vw - 40px);
+        bottom: calc(-3vw - 40px);
+        background-color: $goldcolor;
+        border-radius: 50%;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+
+        img {
+            width: 20%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotateZ(-90deg);
+        }
+    }
+
+}
+
+@media (min-width:0px) and (max-width:960px) {
+    .container-fluid {
+        .home-block {
+            .home-block-center {
+                div.nav-menu {
+                    margin-bottom: 100px;
+
+                    .button-nav-menu {
+                        display: block;
+                        position: relative;
+                        z-index: 1001;
+                    }
+
+                    &>ul {
+                        position: absolute;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        height: 0;
+                        min-height: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: #222;
+                        font-size: 18px;
+                        letter-spacing: 0.2vw;
+                        z-index: 1000;
+
+                        li .dropdown-menu {
+                            border: 3px solid $goldcolor;
+                            background-color: #222;
+
+                            ul li a {
+                                padding: 6px 0px 6px 8px;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                div.home-content {
+                    position: relative;
+
+                    .content-text {
+                        width: 100%;
+                    }
+
+                    .content-play-video {
+                        position: absolute;
+                        transform: rotateZ(90deg) translateX(100%) translateY(40%);
+                        right: 0px;
+                        bottom: 0;
+                    }
+                }
+            }
+
+            .position-block {
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 70%;
+                padding: 5px 15px;
+
+                div.col-3 {
+                    width: 27vw;
+                    justify-content: flex-start;
+                }
+            }
+        }
+
+        .about-block {
+            flex-wrap: wrap;
+
+            .about-citizen {
+                width: 100%;
+                padding-top: 0;
+
+                h2 {
+                    text-align: center;
+                }
+
+                h4 {
+                    text-align: center;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                button {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .images-citizen {
+                padding-top: 30px;
+                width: 100%;
+                justify-content: space-around;
+
+                .citizen-img-group {
+                    width: 48%;
+                    padding-left: 0;
+                }
+
+                .citizen-img-three {
+                    padding-left: 0;
+                    width: 48%;
+                }
+            }
+        }
+
+        .services-block {
+            flex-wrap: wrap;
+
+            .col-3 {
+                width: 50%;
+
+                .info {
+                    .icon-text {
+                        .icon img {
+                            width: 4.6vw;
+                        }
+
+                        p {
+                            font-size: 2vw;
+                            margin-left: 1.6vw;
+                        }
+                    }
+
+                    span.number {
+                        font-size: calc(20px + 4vw);
+                    }
+                }
+            }
+        }
+
+        .packages-block .packages-block-center .card-deck .card .card-body h6.title {
+            font-size: 1.6vw;
+            word-spacing: -1px;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width:859.9px) {
+
+    .container-fluid {
+        .home-block {
+            .home-block-center {
+                width: 90%;
+
+                div.nav .logo img {
+                    width: 65%;
+                }
+
+                div.nav-menu {
+                    margin-bottom: 100px;
+                }
+            }
+
+            .position-block div.col-3 {
+                width: 32vw;
+            }
+        }
+
+        .packages-block .packages-block-center .card-deck {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .card {
+                width: 48%;
+                margin-top: 10px;
+
+                .card-body h6.title {
+                    font-size: 2vw;
+                }
+            }
+        }
+
+        .latest-news-block .card-deck {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .card {
+                width: 48%;
+                margin-top: 10px;
+
+                .card-body h6.title {
+                    font-size: 2vw;
+                }
+            }
+        }
+
+        .footer-block .footer-block-center {
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 10px;
+
+            &>div {
+                &.about-citizen {
+                    width: 100% !important;
+                    margin-top: 20px;
+
+                    .citizen-logo {
+                        width: 30%;
+                        margin: 0 auto;
+                    }
+
+                    p {
+                        margin: 10px 0;
+                        font-size: 14px;
+                    }
+                }
+
+                &.get-in-touch {
+                    justify-content: flex-start;
+
+                    .icons {
+                        margin-right: 2vw;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                width: 50% !important;
+                margin: 0px auto 20px;
+
+                h4.title {
+                    font-size: 15px;
+                }
+
+                ul {
+                    padding-top: 5px !important;
+
+                    li {
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:0px) and (max-width:659.9px) {
+
+    .container-fluid {
+        .home-block {
+            .home-block-center {
+                div.nav {
+                    .language-menu {
+                        position: absolute;
+                        z-index: 1001;
+                        height: 50vh;
+                        padding: 5vh 0;
+                        top: 0;
+                        margin-left: -60px;
+
+                        ul {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: space-around;
+
+                            li a {
+                                padding: 10px;
+                            }
+                        }
+                    }
+
+                    .logo {
+                        width: 50%;
+                    }
+
+                    .nummail {
+                        width: 50%;
+                        font-size: 2.6vw;
+
+                        .icon-tel {
+                            width: 6vw;
+                            height: 6vw;
+                        }
+                    }
+                }
+
+                div.nav-menu {
+                    margin-bottom: 70px;
+                }
+
+                div.home-content {
+                    .content-text p br {
+                        display: none;
+                    }
+
+                    .content-play-video .play-icon {
+                        width: calc(25px + 5vw);
+                        height: calc(25px + 5vw);
+                    }
+                }
+            }
+
+            .social-icons {
+                flex-direction: row;
+                bottom: 10%;
+                left: 5%;
+
+                .icons-item {
+                    margin-right: 10px;
+                }
+            }
+
+            .position-block {
+                justify-content: space-between;
+                width: 80%;
+                padding: 5px 10px;
+
+                div.col-3 {
+                    width: 48%;
+                    align-items: center;
+
+                    h6.title {
+                        font-size: 2.2vw !important;
+                    }
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .about-block .images-citizen {
+            flex-wrap: wrap;
+
+            .citizen-img-group {
+                width: 100%;
+            }
+
+            .citizen-img-three {
+                width: 100%;
+            }
+        }
+
+        .services-block .col-3 {
+            width: 100%;
+
+            .info {
+                .icon-text {
+                    .icon img {
+                        width: 9.2vw;
+                    }
+
+                    p {
+                        font-size: 4vw;
+                        margin-left: 3.2vw;
+                    }
+                }
+
+                span.number {
+                    font-size: calc(30px + 4vw);
+                }
+            }
+        }
+
+        .logo-block {
+            padding-top: 50px;
+            width: 90%;
+            flex-wrap: wrap;
+
+            .mice-uzb-text {
+                width: 100%;
+
+                h6 {
+                    text-align: center;
+                }
+            }
+
+            .mice-uzb-img {
+                margin-top: 20px !important;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        .packages-block .packages-block-center .card-deck {
+            .card {
+                width: 100%;
+                margin-top: 10px;
+
+                .card-body {
+                    h6.title {
+                        font-size: 4vw;
+                    }
+
+                    small {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+
+                .card-footer .info span,
+                .card-footer button {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .business-aviation-service-block .business-aviation-service-block-center {
+            h4.title {
+                width: 100%;
+                text-align: center;
+            }
+
+            p {
+                width: 100%;
+            }
+
+            button {
+                margin: 20px auto;
+            }
+
+            img {
+                transform: unset;
+                position: unset;
+                width: 100%;
+            }
+        }
+
+        .latest-news-block .card-deck {
+            .card {
+                width: 100%;
+                margin-top: 10px;
+
+                .card-body {
+                    h6.title {
+                        font-size: 4vw;
+                    }
+
+                    small {
+                        margin-top: 5px;
+                        font-size: 14px;
+                        line-height: 22px;
+                    }
+                }
+
+                .card-footer .info span,
+                .card-footer button {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .our-partners-block .our-partners-block-center .Logos {
+            flex-wrap: wrap;
+
+            .logo {
+                height: 15vw;
+                width: 50%;
+            }
+        }
+
+        .our-clients-block .clients {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .client {
+                height: 16vw;
+                width: 50%;
+
+                img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@keyframes filter {
+    0% {
+        filter: grayscale(0%);
+    }
+    60% {
+        filter: grayscale(0%);
+    }
+    100% {
+        filter: grayscale(100%);
+    }
+}

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+    <title>https://www.riks.uz</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <!---------------------- header --------------------->
+            <div class="header">
+                <div class="logo">
+                    <img src="img/logo/logo.png">
+                </div>
+                <div class="menu_icon">
+                    <span></span>
+                </div>
+                <nav class="menu">
+                    <ul id="menu">
+                        <li><a class="menu_a active" href="#home">Home</a></li>
+                        <li><a class="menu_a" href="#aboutus">About us</a></li>
+                        <li><a class="menu_a" href="#course">Cources</a></li>
+                        <li><a class="menu_a" href="#advantage">Advantages</a></li>
+                        <li><a class="menu_a" href="#statistic">Statistics</a></li>
+                        <li><a class="menu_a" href="#comments">Comments</a></li>
+                        <li><a class="menu_a" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="contact_phone">
+                    <div class="contact_text">Call to get information:</div>
+                    <div class="phone_number">71 200-38-33</div>
+                </div>
+            </div>
+        </div>
+        <!---------------------- carousel slider ---------------------------->
+        <div class="slideshow_container" id="home">
+            <div class="slideshow fade">
+                <img id="slide" src="img/main page/slide1.jpg">
+            </div>
+            <div class="slideshow fade">
+                <img id="slide" src="img/main page/slide2.jpg">
+            </div>
+            <div class="slideshow fade">
+                <img id="slide" src="img/main page/slide3.jpg">
+            </div>
+            <div class="slideshow fade">
+                <img id="slide" src="img/main page/slide4.jpg">
+            </div>
+            <a class="prev" onclick="prev_next(-1)">&#10094;</a>
+            <a class="next" onclick="prev_next(1)">&#10095;</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <div class="bottom-back" id="aboutus"></div>
+        <!------------------------ info second page --------------------->
+        <div class="riks_info" >
+            <div class="info" data-aos="fade-up" data-aos-duration="1000">
+                <h2>RIKS EDUCATION CENTRE</h2>
+                <div class="info_text1">RIKS Education - Research Institute for Knowledge Systems – один из самых
+                    престижных учебных центров Узбекистана. На протяжении более 12 лет RIKS является ведущим
+                    образовательным центром в области иностранных языков.</div> <br>
+                <div class="info_text2" id="course">RIKS Education получил заслуженное признание многих высших учебных заведений не
+                    только на национальном, но и на международном уровне. Наши специалисты постоянно работают над собой
+                    и повышают уровень квалификации. Они являются активными участниками многих крупных международных
+                    конференций, которые проводятся в таких странах, как Англия, Америка, Канада, Австралия и Россия.
+                    Международный опыт в сфере образования стал причиной стремительного расширения списка наших
+                    международных партнёров: ENGLISH UK, BRITISH COUNCIL UZBEKISTAN, Cambridge English Language
+                    Assessment, и многими другими.</div>
+            </div>
+            <div class="info2" >
+                <div class="info2_inner">
+                    <div class="eng_lang" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000" id="modal_eng" onclick="modal()">
+                        <span class="span5"></span>
+                        <span class="span6"></span>
+                        <h1>Английский Язык</h1>
+                        <p>Учебный центр RIKS Education Centre предоставляет вам курсы General English, широкий спектр
+                            английского языка всех уровней. На каждом этапе обучения студенты проходят...</p>
+                        <h2 class="more_info">&#10095; Подробнее &#10094;</h2>
+                        <span class="span7"></span>
+                        <span class="span8"></span>
+                    </div>
+                   
+                    <div class="ielts" data-aos="fade-left" data-aos-offset="200" data-aos-duration="1000" onclick="modal1()">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <h1>Подготовка к IELTS</h1>
+                        <p>Курс рассчитан на 3 месяца и полностью охватывает все аспекты экзамена. Минимальный уровень
+                            владения языка должен быть не ниже Upper-intermediate. Для занятий используются...</p>
+                        <h2 class="more_info"> &#10095; Подробнее &#10094;</h2>
+                        <span class="span3"></span>
+                        <span class="span4"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="modal">
+                <div class="model_content">
+                    <div class="modal_header">
+                        <h1>Английский Язык</h1>
+                        <span class="close" onclick="modal_x()">&times;</span>
+                    </div>
+                    <div class="modal_head">Учебный центр RIKS Education Centre предоставляет вам курсы General English, широкий спектр английского языка всех уровней. На каждом этапе обучения студенты проходят соответствующий их уровню материал. Прием на курсы делится на 3 направления соответственно от возраста.</div>
+                    <div class="modal_text">English World (10-14)<br> Inspiration(14-16) <br> Headway (16+)</div>
+                    <div class="modal_head">При обучении General English мы не только фокусируемся на прохождении грамматики, но и параллельно развиваем навыки чтения, аудирования, разговорной речи, а также словарный запас. Изучение каждого уровня длится от 4 до 6 месяцев. Для прохождения на следующий уровень нужно будет сдать трудный экзамен.</div>
+                    <div class="modal_text">Beginner – для тех, кто впервые приступает к изучению языка;<br>
+                        Elementary – для тех, кто изучал язык, но многое забыто или плохо усвоено;<br>
+                        Pre-Intermediate – для тех, кто имеет языковую базу и может поддержать разговор на общие темы;<br>
+                        Intermediate – для тех, кто имеет хорошую языковую базу и может поддержать разговор на широкий круг темы;<br>
+                        Upper-Intermediate – для тех, кто может свободно поддержать беседу с несколькими людьми, понимает сложные тексты различной тематики;<br>
+                        Advanced – для тех, кто понимает практически любое устное или письменное сообщение;</div>
+                </div>
+            </div>
+            <div class="modal" id="modal1">
+                <div class="model_content">
+                    <div class="modal_header">
+                        <h1>Подготовка к IELTS</h1>
+                        <span class="close" onclick="modal_x1()">&times;</span>
+                    </div>
+                    <div class="modal_head">IELTS Advanced</div>
+                    <div class="modal_text">Курс рассчитан на 3 месяца и полностью охватывает все аспекты экзамена. Минимальный уровень владения языка должен быть не ниже Upper-intermediate. Для занятий используются учебники IELTS и разнообразные коммуникативные методики международного уровня.</div>
+                    <div class="modal_head">Foundation IELTS Course</div>
+                    <div class="modal_text">Foundation of IELTS Course - это курс, специально разработанный для студентов, которым необходимо сдавать экзамен IELTS, но уровень английского языка не позволяет им принять участие в стандартном курсе подготовки к экзамену. Это интенсивный 16-недельный курс, который доступен для всех желающих, он фокусируется на разработке понимания экзамена и общих тем IELTS, а также на повышении вашего общего уровня английского языка.</div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------- advantages third page ------------------->
+        <div class="advantages" id="advantage">
+            <div class="advantages_inner">
+                <div class="statistic">
+                    <div class="statistic1">
+                        <div class="s">
+                            <img src="img/statistic icons/1.png">
+                            <div class="s_text">ВЫСОКИЙ КОНТРОЛЬ <br> УСПЕВАЕМОСТИ</div>
+                        </div>
+                        <div class="s">
+                            <img src="img/statistic icons/2.png">
+                            <div class="s_text">УДОБНЫЙ ГРАФИК <br> ЗАНЯТИИ</div>
+                        </div>
+                        <div class="s">
+                            <img src="img/statistic icons/3.png">
+                            <div class="s_text">ПРОФЕССИОНАЛЬНЫЕ <br> ПЕДАГОГИ С<br>МЕЖДУНАРОДНЫМ<br>ОПЫТОМ</div>
+                        </div>
+                        <div class="s">
+                            <img src="img/statistic icons/4.png">
+                            <div class="s_text">ЦЕНТР ИМЕЕТ <br> АНГЛИЙСКУЮ<br> БИБЛИОТЕКУ</div>
+                        </div>
+                    <!-- </div>
+                    <div class="statistic1"> -->
+                        <div class="s">
+                            <img src="img/statistic icons/5.png">
+                            <div class="s_text">ОБЛАДАТЕЛЬ <br> МЕЖДУНАРОДНЫХ НАГРАД</div>
+                        </div>
+                        <div class="s">
+                            <img src="img/statistic icons/6.png">
+                            <div class="s_text">УДОБНАЯ ЛОКАЦИЯ <br> (СТАНЦИЯ МЕТРО ОЙБЕК)</div>
+                        </div>
+                        <div class="s">
+                            <img src="img/statistic icons/7.png">
+                            <div class="s_text">12 ЛЕТНИЙ ОПЫТ <br> ПРЕПОДАВАНИЯ</div>
+                        </div>
+                        <div class="s">
+                            <img src="img/statistic icons/8.png">
+                            <div class="s_text">РЕКОРДСМЕН ПО<br> ПОКАЗАТЕЛЮ РЕЗУЛЬТАТОВ IELTS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------ video  and  images ---------------------->
+            <div class="img_video">
+                <div class="images">
+                        <div class="first_block" data-num='1'>
+                            <img src="img/images_hove/1.jpg">
+                            <div class="def">Public Speaking Competition 2016</div>
+                        </div>
+                        <div class="first_block" data-num='2'>
+                            <img src="img/images_hove/2.jpg">
+                            <div class="def">Bowling Championship</div>
+                        </div>
+                        <div class="first_block" data-num='3'>
+                            <img src="img/images_hove/3.jpg">
+                            <div class="def">Samarkand Charity Tripp</div>
+                        </div>
+                        <div class="first_block">
+                            <img src="img/images_hove/4.jpg" data-num='1'>
+                            <div class="def">Bowling Championship</div>
+                        </div>
+                        <div class="first_block">
+                            <img src="img/images_hove/5.jpg" data-num='2'>
+                            <div class="def">English Library</div>
+                        </div>
+                        <div class="first_block">
+                            <img src="img/images_hove/6.jpg" data-num='3'>
+                            <div class="def">International Awards winning centre</div>
+                        </div>
+                        <div class="first_block">
+                            <img src="img/images_hove/7.jpg" height="244px">
+                            <div class="def">The first Pre-Test at British Council</div>
+                        </div>
+                        <div class="first_block">
+                            <img src="img/images_hove/8.jpg">
+                            <div class="def">Public Speaking Competition</div>
+                        </div>
+                        <div class="first_block">
+                            <img src="img/images_hove/9.jpg">
+                            <div class="def">English World for Kids</div>
+                        </div>
+                        <div class="first_block">
+                            <img class="img_teacher" src="img/images_hove/10.jpg">
+                            <div class="def">Professional Teachers</div>
+                        </div>
+                        <div class="first_block">
+                            <img class="img_girl" src="img/images_hove/11.jpg">
+                            <div class="def">Enthusiastic Students</div>
+                        </div>
+                        <div class="first_block">
+                            <img  src="img/images_hove/12.jpg">
+                            <div class="def">English Library</div>
+                        </div>
+                    <div class="doblock-1"></div>
+                    <div class="doblock-2"></div>
+                    <div class="doblock"></div>
+                </div>
+            </div>
+        </div>
+        <!--------------------------- background london-bus -------------------->
+        <div class="back_london_bus"></div>
+        <!-------------------------- statistika -------------------------->
+        <div class="statistika" id="statistic">
+            <div class="statistika_inner">
+                <div class="statistic_header">О КОМПАНИИ В ЦИФРАХ</div>
+                <div class="statistic_numbers">
+                    <div class="numbers_inner">
+                        <div class="statistic_block">
+                            <img src="img/statistic_numbers/workers.png">
+                            <div class="real_num" data-target="900">900</div>
+                            <div class="real_text">Cтудентов каждый месяц</div>
+                        </div>
+                        <div class="statistic_block">
+                            <img src="img/statistic_numbers/teacher.png">
+                            <div class="real_num" data-target="30">30</div>
+                            <div class="real_text">Профессиональных педагогов</div>
+                        </div>
+                        <div class="statistic_block">
+                            <img src="img/statistic_numbers/men.png">
+                            <div class="real_num" data-target="10">10</div>
+                            <div class="real_text">Выделенные менеджеры по обслуживанию</div>
+                        </div>
+                    <!-- </div>
+                    <div class="numbers_inner"> -->
+                        <div class="statistic_block">
+                            <img src="img/statistic_numbers/strelka.png">
+                            <div class="real_num"  data-target="800">800</div>
+                            <div class="real_text">м2 общая площадь в бизнес-центре</div>
+                        </div>
+                        <div class="statistic_block">
+                            <img src="img/statistic_numbers/projects.png">
+                            <div class="real_num"  data-target="100">100</div>
+                            <div class="real_text">международные партнерские организации и образовательные учреждения</div>
+                        </div>
+                        <div class="statistic_block">
+                            <img src="img/statistic_numbers/calendar.png">
+                            <div class="real_num"  data-target="20000">20000</div>
+                            <div id="comments" class="real_text">подписчики в социальных сетях</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------- comments ----------------------------->
+        <div class="comments" >
+            <div class="comment_inner">
+                <a class="prev_btn" onclick="prev()">&#10094;</a>
+                <a class="next_btn" onclick="next()">&#10095;</a>
+                <div class="com" data-pos="-1">
+                    <div class="comment" id="comment">
+                        <div class="ava"> <img src="img/comment ava/client1.png"> </div>
+                        <div class="author">Sardor Ganiyev</div>
+                        <div class="comment_word">I do recall my first lesson at RIKS Education center. When I came I didn't know anything well about English. However, Owning to @riksgroup and my parents I started learning. My first teacher was Ms Marjona and I want to mention that I'll never forget her lessons which helped me and still helps to fulfill my dreams.</div>
+                    </div>
+                </div>
+                <div class="com" data-pos="0">
+                    <div class="comment" id="comment">
+                        <div class="ava"> <img src="img/comment ava/client2.png"> </div>
+                        <div class="author">Galina Nam</div>
+                        <div class="comment_word">To me it's the best Center ever with the extremely supportive management staff. Azimjon Husanov, good luck with your work! I know you put much more into it rather than time...</div>
+                    </div>
+                </div>
+                <div class="com" data-pos="1">
+                    <div class="comment" id="comment">
+                        <div class="ava"> <img src="img/comment ava/client3.png"> </div>
+                        <div class="author">Diyora Mukhamedova</div>
+                        <div class="comment_word">2 years ago by now, when I first came to RIKS education, I surprised seeing friendly atmosphere and lessons of gifted teachers. Personally I am very thankful to all RIKS education staffs for friendly meeting of each student, for very effective lessons which are really helpful for future education or career and helpful materials. </div>
+                    </div>
+                </div>
+                <div class="com" data-pos="2">
+                    <div class="comment" id="comment">
+                        <div class="ava"> <img src="img/comment ava/client4.png"> </div>
+                        <div class="author">Iroda Azimova</div>
+                        <div class="comment_word">O'quv markazlari bilan ko'p ishlaganman. Ammo o'qituvchi sifatida yaxshi taassurotga ega bo'lganim yagona o'quv markazi sizlarnikidir. U vaqtda ish boshlaganingizga ko'p bo'lmagandi, shekilli. Keyinchalik shu yerda yutuqlaringizni ko'rib "halollik, insof muvaffaqiyat garovi" degandim. Alloh ishlaringizga rivoj beraversin!</div>
+                    </div>
+                </div>
+                <div class="com" data-pos="3">
+                    <div class="comment" id="comment">
+                        <div class="ava"> <img src="img/comment ava/client5.png"> </div>
+                        <div class="author">Rano Alixanova</div>
+                        <div class="comment_word">Хочу поблагодарить 2017 год за то, что он был одним из самых лучших! Этот год для меня был полон сюрпризов и счастливых моментов С этого года у меня началась новая глава в моей жизни" Исполнились мои самые заветные мечты! Окончила свой любимый лицей, сдала IELTS и поступила в универЗа это я оченьблагодарна своим учителям и учебному центру.</div>
+                    </div>
+                </div>
+                <div class="com" data-pos="4">
+                    <div class="comment" id="comment">
+                        <div class="ava"> <img src="img/comment ava/client6.png"> </div>
+                        <div class="author">Sardor Gafforov</div>
+                        <div class="comment_word">В прошлым году в декабре я пришел к RIKS Education где я собственно начел изучать этот язык и сегодня труд учителей которые преподавали нам, учили нас, которые делили советами и главное помогли нам найти свой собственный путь к успеху в этой сфере, благодаря им сегодня я получаю хвалу и награду... Я посей день учусь здесь.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------- our achievments ----------------------------->
+        <div class="achievments">
+            <div class="achiev_text">
+                Наши достижения
+            </div>
+            <div class="logos">
+                <div class="logo_img">
+                    <img id="contact" src="img/results/partners.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!------------------------------------- footer --------------------------------->
+        <div class="footer">
+            <div class="footer_content">
+                <div class="footer_adres">
+                    <div class="adres_item">
+                        <div class="head">Адрес:</div>
+                        <div class="inner">Улица Ойбека, 18/1, Бизнес-Центр «Атриум», второй этаж</div>
+                    </div>
+                    <div class="adres_item">
+                        <div class="head">Ориентир:</div>
+                        <div class="inner">Метро «Ойбек»</div>
+                    </div>
+                    <div class="adres_item">
+                        <div class="head">Телефон:</div>
+                        <div class="inner">+998 (71) 200-38-33</div>
+                    </div>
+                    <div class="adres_item">
+                        <div class="head">Email:</div>
+                        <div class="inner">info@riks.uz</div>
+                    </div>
+                    <div class="adres_item">
+                        <div class="head">
+                            <img src="img/footer_icons/tele.png">
+                            <img src="img/footer_icons/inst.png">
+                            <img src="img/footer_icons/face.png">
+                            <img src="img/footer_icons/yb.png">
+                        </div>
+                        <div class="inner">Copyright © 2007-2020 All rights reserved</div>
+                    </div>
+                </div>
+                <div class="footer_time">
+                    <div class="time_text">Рабочее время</div>
+                    <div class="hour">Пн 11:00 - 18:00</div>
+                    <div class="hour">Вт 11:00 - 18:00</div>
+                    <div class="hour">Ср 11:00 - 18:00</div>
+                    <div class="hour">Чт 11:00 - 18:00</div>
+                    <div class="hour">Пт 11:00 - 18:00</div>
+                    <div class="hour">Сб 11:00 - 18:00</div>
+                </div>
+                <div class="footer_map">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.5643139062245!2d69.27282031538337!3d41.296585779272526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b35a2b00077%3A0x5f4ffc6c22e8b435!2sRIKS%20Education%20%7C%20IELTS%20Preparation%20centre!5e0!3m2!1sru!2s!4v1608056742940!5m2!1sru!2s" width="450" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+     <script src="js/jQuery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

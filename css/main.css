@@ -1,0 +1,97 @@
+body{
+    background: url("../images/IMG_7287.HEIC") no-repeat;
+    -webkit-background-size: cover;
+    height: 340px;
+    box-sizing: border-box;
+}
+.wrapp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.welcoming{
+    font-size: 40px;
+    text-align: center;
+    color: #2F4F4F;
+    letter-spacing: -2px;
+}
+.my_works{
+    cursor: pointer;
+    font-size: 25px;
+    border: 2px solid black;
+    padding: 10px 20px;
+    width: 300px;
+    margin:  20px auto;
+    text-align: center;
+    display: flex;
+}
+.my_works:hover{
+    color: white;
+    border-color: white;
+    transition: .4s ;
+    background-color: rgba(80, 76, 76, 0.596);
+}
+.text{
+    user-select: none;
+}
+.span{
+    margin-left: 10px;
+    transition: .1s;
+    user-select: none;
+}
+.active{
+    transform: rotate(90deg);
+    transition: .3s;
+}
+.webpages{
+    opacity: 0;
+    text-align: center;
+    
+}
+a{
+    position: relative;
+    text-decoration: none; 
+    margin: 0 10px;
+}
+.a_active{
+    opacity: 1;
+    transition: .5s;
+}
+img{
+    width: 220px;
+    height: 120px;
+    border-radius: 10px;
+}
+.back{
+    width: 220px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    border-radius: 10px;
+    left: 0;
+    top: -104px;
+}
+a:hover img{
+    opacity: .4;
+    transition: .3s;
+}
+a:hover .back{
+    opacity: 0.8;
+}
+.link_text{
+    position: absolute;
+    top: -52px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:hover .link_text{
+    opacity: 1;
+    transition: all .3s linear;
+}
+
