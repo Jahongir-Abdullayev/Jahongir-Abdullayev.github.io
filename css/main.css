@@ -1,8 +1,9 @@
 body{
-    background: url("../images/IMG_7287.HEIC") no-repeat;
+    background: url("../images/IMG_7287.HEIC") no-repeat, center;
     -webkit-background-size: cover;
     height: 340px;
     box-sizing: border-box;
+    background-attachment: fixed;
 }
 .wrapp{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -46,7 +47,15 @@ body{
 .webpages{
     opacity: 0;
     text-align: center;
-    
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+.webpages div{
+    width: 250px;
+    margin-bottom: 20px;
 }
 a{
     position: relative;
@@ -62,7 +71,7 @@ img{
     height: 120px;
     border-radius: 10px;
 }
-.back{
+.webpages a .back{
     width: 220px;
     height: 120px;
     background-color: black;
@@ -82,8 +91,6 @@ a:hover .back{
 .link_text{
     position: absolute;
     top: -52px;
-    left: 0;
-    width: 100%;
     opacity: 0;
     color: white;
     font-size: 18px;
@@ -95,3 +102,15 @@ a:hover .link_text{
     transition: all .3s linear;
 }
 
+
+@media (max-width:700px){
+    .welcoming{
+        font-size: 25px;
+    }
+    .my_works{
+        width: 200px;
+        font-size: 15px;
+        padding: 10px 10px;
+        margin:  20px auto;
+    }
+}
