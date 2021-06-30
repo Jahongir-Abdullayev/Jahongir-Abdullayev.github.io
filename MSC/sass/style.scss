@@ -231,15 +231,15 @@ body{
                     border-top-left-radius: 5px;
                     border-top-right-radius: 5px;
                     transition: all .3s ease;
-                    &::after{
-                        @include after_content(19%, 767px);
-                    }
+                    // &::after{
+                    //     @include after_content(19%, 767px);
+                    // }
                      &:hover {
                         background-color: $greenColor;
                         color: white;
-                        &::after{
-                            background-color: $greenColor;
-                         }
+                        // &::after{
+                        //     background-color: $greenColor;
+                        //  }
                     }
                     .box_header{
                         margin-bottom: 5px;
@@ -267,41 +267,41 @@ body{
             }
             .box.second{
                 @extend %boxes;
-                .box_content::after{
-                    @include after_content(41%, 767px);
-                }
+                // .box_content::after{
+                //     @include after_content(41%, 767px);
+                // }
                  .box_content:hover {
                     background-color: $greenColor;
                     color: white;
-                    &::after{
-                        background-color: $greenColor;
-                     }
+                    // &::after{
+                    //     background-color: $greenColor;
+                    //  }
                 }
             }
             .box.third{
                 @extend %boxes;
-                .box_content::after{
-                    @include after_content(19%, 1014px);
-                }
+                // .box_content::after{
+                //     @include after_content(19%, 1014px);
+                // }
                  .box_content:hover {
                     background-color: $greenColor;
                     color: white;
-                    &::after{
-                        background-color: $greenColor;
-                     }
+                    // &::after{
+                    //     background-color: $greenColor;
+                    //  }
                 }
             }
             .box.fourth{
                 @extend %boxes;
-                .box_content::after{
-                    @include after_content(41%, 1014px);
-                }
+                // .box_content::after{
+                //     @include after_content(41%, 1014px);
+                // }
                  .box_content:hover {
                     background-color: $greenColor;
                     color: white;
-                    &::after{
-                        background-color: $greenColor;
-                     }
+                    // &::after{
+                    //     background-color: $greenColor;
+                    //  }
                 }
             }
             .news_right{
