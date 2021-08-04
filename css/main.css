@@ -1,9 +1,11 @@
 body{
-    background: url("../images/IMG_7287.HEIC") no-repeat, center;
+    /* background: url("../images/IMG_7287.HEIC") no-repeat, center;
     -webkit-background-size: cover;
     height: 340px;
     box-sizing: border-box;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    height: 360px;
 }
 .wrapp{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
