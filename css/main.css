@@ -74,16 +74,7 @@ body{
   .mobile_port{
     display: none;
   }
-  .mouse{
-    width: 100px;
-    position: absolute;
-    top: 85%;
-    right: 46%;
-  }
-  .mouse img{
-    width: 85px;
-  }
-
+  
 
   .my_works{
       width: 100%;
@@ -411,49 +402,60 @@ body{
     display: flex;
     margin: 150px auto 50px auto;
     flex-wrap: wrap;
-}
-.my_photo{
-    width: 250px;
-}
-.my_photo img{
+  }
+  .my_photo{
+     width: 250px;
+  }
+  .my_photo img{
     width: 90%;
     margin-bottom: 10px;
-}
-.about_me_text{
+  }
+  .about_me_text{
     width: 250px;
     text-align: center;
-}
-.about_me_header{
+  }
+  .about_me_header{
     display: none;
-}
-.info{
+  }
+  .info{
     color: gray;
-}
-.skills{
+  }
+  .skills{
     line-height: 28px;
-}
-.skills_head{
+  }
+  .skills_head{
     font-size: 16px;
     margin-top: 20px;
-}
-.skill{
+  }
+  .skill{
     font-size: 14px;
-}
-.about_me_header_mob{
+  }
+  .about_me_header_mob{
   display: block;
   color: #6EC1E4;
-}
-.footer{
+  }
+  .footer{
   width: 100%;
   background-color: #959595;
   margin: 0 auto;
-}
-.quote{
+  }
+  .quote{
   color: white;
   width: 300px;
   margin: 0 auto;
   padding: 20px 0;
   text-align: center;
+  }
 }
+
+@media (min-width:1600px) and (max-width:1995px){
+  /* .line{
+    display: none;
+    width: 0px;
+  } */
+  .intro_block{
+    background-size: cover;
+  }
+  
 
 }
