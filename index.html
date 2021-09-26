@@ -1,135 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Jenius</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="assets/images/logo1.png">
+
+	<title>Portfolio</title>
+
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+
+
 </head>
+
 <body>
-    <div class="wrap">
-        <div class="intro_block">
-            <div class="intro_inner">
-                <div class="header">
-                    <img src="images/LogoMakr-7e7M5M.png">
-                </div>
-                <!-- Main block text -->
-                <div class="intro_block_text">
-                    <div class="hi">Hi</div>
-                    <div class="name_text"> <span>My name is Jahongir,</span> <span>I am a Front-end developer</span> </div>
-                    <div class="line">
-                        <div class="left">
-                          <div class="content">
-                            <span class="spanSlow">Welcome to my Portfolio</span>
-                          </div>
-                        </div><!--
-                        --><div class="right">
-                          <div class="content">
-                            <span class="spanSlow">Welcome to my Portfolio</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="mobile_port">Welcome to my Portfolio</div>
-                </div>
-                <!-- <div class="mouse">
-                    <img src="images/scroll-down-btn.gif" alt="">
-                </div> -->
-            </div>
 
-           
-        </div>
-        <div class="my_works">
-            <div class="works_block">
-                <div class="myWorks_header">My Works</div>
-                <div class="works scroll-element js-scroll slide-left">
-                    <div class="work_img">
-                        <img src="images/freekick.PNG" alt="">
-                    </div>
-                    <div class="work_text_block">
-                        <div class="work_header">Football News</div>
-                        <div class="work_text">The responsive landing page of the Education center.<br>
-                            Beautiful animations and hover effects.<br>
-                            Large collection of gallery.</div>
-                        <a href="Freekick/landing page/index.html" target="_blank"> <button>Click to see full website</button>  </a>
-                    </div>
-                </div>
-                <div class="works scroll-element js-scroll slide-right">
-                    <div class="work_text_block">
-                        <div class="work_header">RIKS Education Center</div>
-                        <div class="work_text">Website of football news.<br>
-                            Great design with responsiveness.</div>
-                        <a href="RIKS/index.html" target="_blank"> <button>Click to see full website</button>  </a>
-                    </div>
-                    <div class="work_img">
-                        <img src="images/riks.PNG" alt="">
-                    </div>
-                </div>
-                <div class="works scroll-element js-scroll slide-left">
-                    <div class="work_img">
-                        <img src="images/msc.PNG" alt="">
-                    </div>
-                    <div class="work_text_block">
-                        <div class="work_header">MSC Commercial Zone</div>
-                        <div class="work_text">Simple landing page about commercial and entertainment are.</div>
-                        <a href="MSC/index.html" target="_blank"> <button>Click to see full website</button>  </a>
-                    </div>
-                </div>
-                <div class="works scroll-element js-scroll slide-right">
-                    <div class="work_text_block">
-                        <div class="work_header">CITIZEN TRAVEL</div>
-                        <div class="work_text"> Website for travel agency<br>
-                            Unusual design and colors with beautiful pictures.</div>
-                        <a href="Citizen/index.html" target="_blank"> <button>Click to see full website</button>  </a>
-                    </div>
-                    <div class="work_img">
-                        <img src="images/citizen.PNG" alt="">
-                    </div>
-                </div>
-                <div class="works scroll-element js-scroll slide-left">
-                    <div class="work_img">
-                        <img src="images/cal.PNG" alt="">
-                    </div>
-                    <div class="work_text_block">
-                        <div class="work_header">Calcultor</div>
-                        <div class="work_text">Simple calculator including<br>
-                            calculations such as division or multiplication and others</div>
-                        <a href="Calculator/index.html" target="_blank"> <button>Click to see full website</button>  </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<!-- Preloader -->
 
-        <div class="about_me scroll-element js-scroll fade-in-bottom">
-            <h2 class="about_me_header_mob">About Me</h2>
-            <div class="my_photo">
-                <img src="images/photo_2021-09-01_23-06-21.jpg" alt="">
-            </div>
-            <div class="about_me_text">
-                <h2 class="about_me_header">About Me</h2>
-                <div class="info">I am a professional front-end developer. I am here to bring the wireframes of the UX designer to life through HTML, CSS, and Javascript, and also make it responsive for all types of devices. Working with me, you will be satisfied with the high quality, creativity, and beautiful design. </div>
-                <div class="skills">
-                    <div class="skills_head">My skills and knowledge:</div>
-                    <div class="skill">✅ HTML</div>
-                    <div class="skill">✅ CSS (SASS, Bootstrap)</div>
-                    <div class="skill">✅ Javascript (jQuery)</div>
-                    <div class="skill">✅ WordPress</div>
-                    <div class="skill">✅ Deep knowledge of front-end</div>
-                    <div class="skill">✅ Landing pages</div>
-                    <div class="skill">✅ Responsive website</div>
-                </div>
-            </div>
-        </div>
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
 
-        <div class="footer">
-            <div class="quote">The only way to do great work is to love what you do.</div>
-        </div>
-        
-        
-    </div>
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+		<div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Hello, my name is Jahongir and I am</div>
+			<h1>Front-end Developer</h1>
+			<div class="start">creating modern and responsive Websites</div>
+			<div class="download-cv"><a href="./index.html" id="download-cv"><span></span><span></span><span></span><span></span>Download CV</a></div>
+		</div>
+
+		<a href="#services" id="visHinMinH">
+			<div class="scroll-down">
+				<span>
+					<i class="fa fa-angle-down fa-2x"></i>
+				</span>
+			</div>
+		</a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img class="logo" src="assets/images/logo.png">
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse" data-open="false">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home" class="nav_link">Home</a></li>
+						<li><a href="#services" class="nav_link">Services</a></li>
+						<li><a href="#portfolio" class="nav_link">Works</a></li>
+						<li><a href="#skills" class="nav_link">Skills</a></li>
+						<!-- <li><a href="#testimonials" class="nav_link">Testimonials</a></li>
+						<li><a href="#contact" class="nav_link">Contact</a></li> -->
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+	<!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">This is what I do</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							The more I deal with the work as something that is my own, as something that is personal, the more successful it is.
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row perspective">
+
+				<div class="col-sm-3">
+
+					<div class="iconbox back">
+						<p class="info">
+							Well Designed and Functional website which is really attractive.
+                            Easy to Use. Optimized for Mobile. 
+                            Fresh, Quality Content. 
+                            Readily accessible contact and location. 
+                            Clear calls to action. 
+                            Eye catching colors and effects. Great looking landing pages. 
+						</p>
+					</div>
+
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-magic-wand"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Websites</h3>
+							<div class="iconbox-desc">
+								Good design is immediately visible. Great design is imperceptible.
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox back">
+						<p class="info">
+							Webprogramming - writing, markup and coding involved in Web development, which includes Web content
+							using HTML, CSS, Bootstrap, SASS, Javascript, jQuery and Wordpress.
+							Working in all browsers without any trouble. Clean code with explanations. 
+						</p>
+					</div>
+
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-puzzle"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Web Programming</h3>
+							<div class="iconbox-desc">
+								Talking to a computer using codes
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox back">
+						<p class="info">
+							Web content or layout is flexible to fit within the different screen sizes where they are displayed.
+							It will not lose its appeal, even if you open it on a very small screen. Pretty burger menu with a good animations.
+						</p>
+					</div>
+
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span class="icon-screen-smartphone"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Responsiveness</h3>
+							<div class="iconbox-desc">
+								Doesn't matter the size is for demonstration. Open it everywhere.
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox back">
+						<p class="info">
+							The types of animations you can get by working with me: <br>
+							- Preloader (Welcoming animation)<br>
+							- Background animation<br>
+							- Scrolling animation<br>
+							- Sidebar animation<br>
+							- Hover animation<br>
+							- Image slider (Slideshow)<br>
+						</p>
+					</div>
+
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span class="icon-fire"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Amazing animations</h3>
+							<div class="iconbox-desc">
+								Good things come to those who wait, but only the things left by those who hustle
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Services end -->
+
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My works</h2>
+						<div class="pfblock-line"></div>
+						<!-- <div class="pfblock-subtitle">
+							No one lights a lamp in order to hide it behind the door: the purpose of light is to create
+							more light, to open people’s eyes, to reveal the marvels around.
+						</div> -->
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
 
 
+			<div class="row">
 
-    <script src="js/main.js"></script>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<a href="assets/Porten/index.html" target="_blank">
+						<div class="grid wow zoomIn">
+							<figure class="effect-bubba">
+								<img src="assets/images/Porten.jpg" alt="img01" />
+								<figcaption>
+									<h2>shopping <span>PORTEN</span></h2>
+									<p>Landing page for clothes shop Porten with stunning animations</p>
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<a href="assets/MSC/index.html" target="_blank">
+						<div class="grid wow zoomIn">
+							<figure class="effect-bubba">
+								<img src="assets/images/msc.jpg" alt="img01" />
+								<figcaption>
+									<h2>MSC <span>centre</span></h2>
+									<p>Simple landing page about commercial and entertainment are.</p>
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+				
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<a href="assets/RIKS/index.html" target="_blank">
+						<div class="grid wow zoomIn">
+							<figure class="effect-bubba">
+								<img src="assets/images/riks1.jpg" alt="img01" />
+								<figcaption>
+									<h2><span>Riks</span></h2>
+									<p> Beautiful animations and hover effects.Large collection of gallery.</p>
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<a href="assets/Freekick/landing page/index.html" target="_blank">
+						<div class="grid wow zoomIn">
+							<figure class="effect-bubba">
+								<img src="assets/images/freekick.jpg" alt="img01" />
+								<figcaption>
+									<h2>content <span>football</span></h2>
+									<p>Website of football news. Great design with responsiveness.</p>
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<a href="assets/Citizen/index.html" target="_blank">
+						<div class="grid wow zoomIn">
+							<figure class="effect-bubba">
+								<img src="assets/images/citizen.jpg" alt="img01" />
+								<figcaption>
+									<h2>CITIZEN <span>TRAVEL</span></h2>
+									<p>Website for travel agency
+										Unusual design and colors with beautiful pictures.</p>
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<a href="assets/Calculator/index.html" target="_blank">
+						<div class="grid wow zoomIn">
+							<figure class="effect-bubba">
+								<img src="assets/images/cal.jpg" alt="img01" />
+								<figcaption>
+									<h2> <span>Calculator</span></h2>
+									<p>Simple calculator including
+										calculations like division or multiplication and others</p>
+								</figcaption>
+							</figure>
+						</div>
+					</a>
+				</div>
+
+		
+
+			</div>
+
+
+		</div><!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+
+	<!-- Skills start -->
+
+	<section class="pfblock pfblock-gray" id="skills">
+
+		<div class="container">
+
+			<div class="row skills">
+
+				<div class="row mySkills">
+
+					<div class="col-sm-6 col-sm-offset-3">
+
+						<div class="pfblock-header wow fadeInUp">
+							<h2 class="pfblock-title">My Skills</h2>
+							<div class="pfblock-line"></div>
+							<div class="pfblock-subtitle">
+								
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="col-sm-6 col-md-3 text-center progressCircle">
+					<svg class="progress-ring" height="140" width="140">
+						<circle class="progress-ring__circle" stroke-width="2" stroke="#ddd" fill="transparent" r="68"
+							cx="70" cy="70" />
+					</svg>
+					<span data-percent="100" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">HTML</span>
+					</span>
+					<!-- <h3 class="text-center">Programming</h3> -->
+				</div>
+				<div class="col-sm-6 col-md-3 text-center progressCircle">
+					<svg class="progress-ring" height="140" width="140">
+						<circle class="progress-ring__circle" stroke-width="2" stroke="#ddd" fill="transparent" r="68"
+							cx="70" cy="70" />
+					</svg>
+					<span data-percent="100" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">CSS</span>
+					</span>
+					<!-- <h3 class="text-center">Design</h3> -->
+				</div>
+				<div class="col-sm-6 col-md-3 text-center progressCircle">
+					<svg class="progress-ring" height="140" width="140">
+						<circle class="progress-ring__circle" stroke-width="2" stroke="#ddd" fill="transparent" r="68"
+							cx="70" cy="70" />
+					</svg>
+					<span data-percent="100" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">Javascript</span>
+					</span>
+					<!-- <h3 class="text-center">Marketing</h3> -->
+				</div>
+				<div class="col-sm-6 col-md-3 text-center progressCircle">
+					<svg class="progress-ring" height="140" width="140">
+						<circle class="progress-ring__circle" stroke-width="2" stroke="#ddd" fill="transparent" r="68"
+							cx="70" cy="70" />
+					</svg>
+					<span data-percent="100" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">Wordpress</span>
+					</span>
+					<!-- <h3 class="text-center">UI / UX</h3> -->
+				</div>
+				<div class="col-sm-6 col-md-3 text-center progressCircle">
+					<svg class="progress-ring" height="140" width="140">
+						<circle class="progress-ring__circle" stroke-width="2" stroke="#ddd" fill="transparent" r="68"
+							cx="70" cy="70" />
+					</svg>
+					<span data-percent="100" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">Sass</span>
+					</span>
+					<!-- <h3 class="text-center">UI / UX</h3> -->
+				</div>
+				<div class="col-sm-6 col-md-3 text-center progressCircle">
+					<svg class="progress-ring" height="140" width="140">
+						<circle class="progress-ring__circle" stroke-width="2" stroke="#ddd" fill="transparent" r="68"
+							cx="70" cy="70" />
+					</svg>
+					<span data-percent="100" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">Bootstrap</span>
+					</span>
+					<!-- <h3 class="text-center">UI / UX</h3> -->
+				</div>
+				<div class="col-sm-6 col-md-3 text-center progressCircle">
+					<svg class="progress-ring" height="140" width="140">
+						<circle class="progress-ring__circle" stroke-width="2" stroke="#ddd" fill="transparent" r="68"
+							cx="70" cy="70" />
+					</svg>
+					<span data-percent="100" class="chart easyPieChart"
+						style="width: 140px; height: 140px; line-height: 140px;">
+						<span class="percent">jQuery</span>
+					</span>
+					<!-- <h3 class="text-center">UI / UX</h3> -->
+				</div>
+
+			</div>
+			<!--End row -->
+
+		</div>
+
+	</section>
+
+	<!-- Skills end -->
+
+	<!-- CallToAction start -->
+
+	<!-- <section class="calltoaction">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight">ARE YOU READY TO START?</h2>
+					<div class="calltoaction-decription wow slideInRight">
+						I'm available for freelance projects.
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight">
+					<a href="#contact" class="btn btn-lg">Hire Me</a>
+				</div>
+
+			</div> -->
+			<!-- .row -->
+		<!-- </div> -->
+		<!-- .container -->
+	<!-- </section> -->
+
+	<!-- CallToAction end -->
+
+	<!-- Testimonials start -->
+
+	<!-- <section id="testimonials" class="pfblock pfblock-gray">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">What my clients say</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							No one lights a lamp in order to hide it behind the door: the purpose of light is to create
+							more light, to open people’s eyes, to reveal the marvels around.
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div id="cbp-qtrotator" class="cbp-qtrotator">
+					<div class="cbp-qtcontent">
+						<img src="assets/images/client-1.jpg" alt="client-1" />
+						<blockquote>
+							<p>Work with John was a pleasure. He understood exactly what I wanted and created an awesome
+								site for my company.</p>
+							<footer>Pino Caruso</footer>
+						</blockquote>
+					</div>
+					<div class="cbp-qtcontent">
+						<img src="assets/images/client-2.jpg" alt="client-2" />
+						<blockquote>
+							<p>I'm really happy with the results. Get 100% satisfaction is difficult but Alex got it
+								without problems.</p>
+							<footer>Jane Doe</footer>
+						</blockquote>
+					</div>
+					<span class="cbp-qtprogress"></span>
+
+				</div>
+
+			</div>
+
+
+		</div>
+	</section> -->
+
+	<!-- Testimonial end -->
+
+
+	<!-- Contact start -->
+
+	<!-- <section id="contact" class="pfblock drop-line">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Drop me a line</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							No one lights a lamp in order to hide it behind the door: the purpose of light is to create
+							more light, to open people’s eyes, to reveal the marvels around.
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			
+
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<form id="contact-form" role="form">
+						<div class="ajax-hidden">
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="c_name">Name</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+							</div>
+
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="c_email">Email</label>
+								<input type="email" id="c_email" class="form-control" name="c_email"
+									placeholder="E-mail">
+							</div>
+
+							<div class="form-group wow fadeInUp">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7"
+									placeholder="Message"></textarea>
+							</div>
+
+							<button type="submit" class="btn btn-lg btn-block wow fadeInUp">Send
+								Message</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
+
+				</div>
+
+			</div>
+			
+		</div>
+		
+	</section> -->
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<!-- <li><a href="index.html#" title="upwork" class="wow fadeInUp">up</a></li>
+						<li><a href="index.html#" title="instagram" class="wow fadeInUp"><i class="fa fa-instagram"></i></a></li> -->
+						
+					</ul>
+
+					<p class="heart">
+						Made with <span class="fa fa-heart fa-2x animated pulse"></span> in Uzbekistan
+					</p>
+					<p class="copyright">
+						The only way to do great work is to love what you do.
+					</p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+
+	<!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+	<script src="assets/js/jQuery.min.js"></script>
+	<script src="assets/js/gsap.min.js"></script>
+	<script src="assets/js/ScrollToPlugin.min.js"></script>
+	<script src="assets/js/ScrollTrigger.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
 </body>
+
 </html>
